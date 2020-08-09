@@ -1,0 +1,468 @@
+@import url('fonts.css');
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* navigation_bar start */
+
+nav {
+   background: gray;
+   width: 1190px;
+   margin: auto;
+   padding: 5px 0px;
+   border-radius: 3px;
+}
+
+.nav_bar {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+}
+
+.nav_items {
+   list-style: none;
+   margin: 0px 15px;
+   background-color: red;
+   padding: 3px 15px;
+   border-radius: 3px;
+   font-weight: bold;
+   font-family: arial black;
+   text-transform: uppercase;
+   font-size: 13px;
+   transition: 0.5s ease-in-out;
+}
+
+.nav_items:hover {
+   background: linear-gradient(45deg, rgb(13, 14, 13), white);
+   color: aqua;
+}
+
+li:nth-child(4) {
+   background: linear-gradient(45deg, rgb(177, 160, 11), white);
+}
+
+/* this is logo section */
+
+.logo {
+   width: 90px;
+   margin-top: 5px;
+}
+
+img {
+   margin-left: 2px;
+}
+
+/* logo end part */
+
+/* head_line start */
+
+.breaking_news {
+   margin-left: 3px;
+   padding: 0;
+   border: 1px solid;
+   background: linear-gradient(60deg, yellow, green);
+   border-radius: 3px;
+}
+
+marquee {
+   padding: 4px;
+   font-weight: bold;
+   letter-spacing: 2px;
+}
+
+.line {
+   width: 1100px;
+   margin: auto;
+   padding: 1px;
+   background-color: black;
+   border: 0;
+   border-radius: 5px;
+}
+
+/* head_line end */
+
+#About_sec {
+   background-color: green;
+   margin: auto;
+   margin-top: 25px;
+   display: flex;
+}
+
+/* About myself */
+
+.about_photo {
+   width: 30%;
+   padding: 30px;
+   box-shadow: 3px 0px 10px blue;
+   transition: 0.7s ease;
+   position: relative;
+}
+
+.row_img {
+   border: 2px solid;
+   border-radius: 3px;
+   transition: 0.6s ease-in-out;
+}
+
+.row_img:hover {
+   transform: scale(0.7);
+}
+
+.about_photo:hover {
+   box-shadow: 1px 1px 5px red;
+}
+
+/* About myself */
+
+/* after and before task */
+
+.about_photo::before {
+   content: 'Click me';
+   background: linear-gradient(90deg, hotpink, blue);
+   border-radius: 3px;
+   padding: 0px 5px;
+   font-family: abel;
+   position: absolute;
+   top: 0;
+   width: 100px;
+   text-align: center;
+   left: 7rem;
+   top: 5px;
+   font-weight: bold;
+}
+
+.about_photo::after {
+   content: "If you want to visit in the whole world then you can start from now. Because the world is very nice. Every moment you can breath safely so i shall humbly request let's have a walk!";
+   text-align: justify;
+   border: 0;
+   outline: none;
+   line-height: 1.8;
+   color: rgb(207, 174, 174);
+}
+
+/* before and after task completed */
+
+/* about sagor badsha */
+
+.about_me {
+   width: 800px;
+   height: 350px;
+   margin: auto;
+   display: flex;
+   align-items: center;
+   transition: 0.6s ease-in-out;
+}
+
+.name_title {
+   color: white;
+   text-transform: uppercase;
+   text-align: center;
+   padding-top: 15px;
+   border-right: 3px solid black;
+   padding: 5px;
+   color: black;
+   box-shadow: 0px 0px 3px white;
+}
+
+.name_title:hover {
+   background: linear-gradient(458deg, blue, yellow);
+}
+
+.about_details {
+   width: 550px;
+   line-height: 2;
+   text-align: justify;
+   padding: 15px;
+   font-size: 18px;
+   transition: .5s ease-in-out;
+   position: relative;
+}
+
+.about_details::after {
+   content: "Explore ";
+   border: 1px solid;
+   padding: 2px 15px;
+   position: absolute;
+   left: 13rem;
+   background: linear-gradient(90deg, green, white);
+   font-family: arial black;
+   text-transform: uppercase;
+   border: 0;
+   outline: none;
+   box-shadow: 3px 0px 3px blue;
+}
+
+/* about sagor badsha end part */
+
+/* place name start */
+
+.place_name {
+   height: 10vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.place_name h3 {
+   font-size: 25px;
+   border: 1px solid;
+   padding: 10px;
+   font-weight: bold;
+   border-radius: 3px;
+   font-family: sans-serif;
+   transition: 0.6s ease-in-out;
+}
+
+.place_name h3:hover {
+   background: green;
+}
+
+/* place name start end*/
+
+/* info for place */
+
+.info_place_main {
+   display: flex;
+   width: 95%;
+   margin: auto;
+   justify-content: center;
+}
+
+.chandpur {
+   width: 22%;
+   background: linear-gradient(90deg, rgba(0, 0, 255, 0.418), rgb(42, 122, 42));
+   margin: 20px;
+   padding: 15px;
+   border-radius: 5px;
+   transition: .6s ease-in-out;
+   opacity: .5;
+   cursor: pointer;
+   box-shadow: 1px 1px 3px hotpink;
+}
+
+.chandpur:hover {
+   transform: scale(.9);
+   opacity: 1;
+   background: transparent;
+}
+
+/* info for place end part */
+
+/* other countries demo  start*/
+
+.othr_coun_ttl {
+   padding: 20px;
+   text-align: center;
+   font-family: time;
+   letter-spacing: 2px;
+   font-weight: bold;
+   font-size: 35px;
+   text-decoration: overline blue;
+}
+
+.other_country_main {
+   width: 90%;
+   margin: auto;
+   overflow: hidden;
+   display: flex;
+}
+
+.country_1_img {
+   width: 25%;
+   float: right;
+   padding: 15px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: .5s ease-in-out;
+}
+
+.country_1_img:hover {
+   transform: rotate(360deg);
+}
+
+.about_1 {
+   width: 50%;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   margin: auto;
+   line-height: 1.8;
+   padding: 15px;
+}
+
+.about_1 .title_1 {
+   font-family: bebas;
+   letter-spacing: 3px;
+   padding: 25px 0px;
+   font-size: 30px;
+   color: white;
+   text-shadow: 5px 5px 5px gray;
+   text-align: center;
+}
+
+.about_1 .abu_details {
+   font-size: 20px;
+   font-weight: 500;
+   color: darkblue;
+   text-align: justify;
+   padding: 5px;
+}
+
+.about_1 .button_2 {
+   padding-top: 25px;
+   float: right;
+}
+
+.row_btn_2 {
+   padding: 5px 10px;
+   border-radius: 5px;
+   border: 0;
+   outline: none;
+   font-size: 19px;
+   font-family: roboto;
+   background: linear-gradient(45deg, yellow, green);
+   transition: .5s ease;
+}
+
+.row_btn_2:hover {
+   background: navajowhite;
+   transform: rotate(-5deg);
+}
+
+.line_2 {
+   border: 0;
+   padding: 2px 0px;
+   background: gray;
+   width: 50%;
+   margin: auto;
+}
+
+/* other countries demo end  */
+
+/* rgister form  start*/
+
+#form {
+   width: 75%;
+   margin: auto;
+   padding: 10px;
+   text-align: center;
+}
+
+.hurry_up {
+   padding: 25px;
+   font-family: antone;
+   color: white;
+   letter-spacing: 2px;
+   transition: .3s;
+   width: 300px;
+   margin: auto;
+}
+
+.hurry_up:hover {
+   color: black;
+}
+
+input {
+   width: 50%;
+   border-radius: 3px;
+   padding: 5px;
+   font-size: 20px;
+   border: 0;
+   outline: none;
+   transition: .2s ease-in;
+}
+
+input:hover {
+   background: rgba(0, 128, 0, 0.329);
+}
+
+span {
+   font-size: 20px;
+   font-family: antone;
+   line-height: 1.5;
+   font-weight: 500;
+   color: yellow;
+}
+
+.row_btn_3 {
+   padding: 10px 20px;
+   margin: 15px;
+   border: 0;
+   outline: none;
+   background: linear-gradient(90deg, blue, black);
+   color: white;
+   cursor: pointer;
+   font-family: roboto;
+   font-size: 18px;
+}
+
+.row_btn_3:hover {
+   background: transparent;
+   border: 1px solid;
+}
+
+/* rgister form end */
+
+/* footer sectn start */
+
+footer {
+   background-color: black;
+   color: white;
+   display: flex;
+   justify-content: center;
+}
+
+.design_name {
+   width: 25%;
+   text-align: center;
+   margin: 15px;
+}
+
+.menu_place {
+   list-style: none;
+}
+
+.menu_name {
+   background: red;
+   padding: 15px;
+   margin: 10px;
+   font-size: 18px;
+   font-family: lexen;
+   transition: .3s ease-in-out;
+}
+
+.menu_name:hover {
+   background-color: gray;
+}
+
+/* footer sectn end */
+
+i {
+   height: 50px;
+   width: 50px;
+   border-radius: 50%;
+   margin: 5px;
+   color: blue;
+}
+
+i:hover {
+   background: transparent;
+   border: 1px solid;
+}
+
+.fab {
+   background-color: yellow;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.main {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+}
